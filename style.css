@@ -1,0 +1,34 @@
+.music_player{
+    width: 600px;
+    height: 130px;
+    padding: 15px;
+    background-color: rgb(202, 202, 202);
+    border-radius: 25px;
+}
+
+.music{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.btm{
+    margin: 15px 10px 0px 10px;
+    box-sizing: border-box;
+    width: 10%;
+}
+
+.buttons{
+    text-align: center;
+}
+
+#progress_bar{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+}
+
+#progress_div{
+    width: 80%;
+    margin: auto;
+}

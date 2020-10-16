@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicPlayer</title>
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+<body>
+    <div class="music_player">
+
+        <audio id="music" class="music" state="stopped">
+            <source src="./Assets/Musics/teste.mp3">
+        </audio>
+
+        <div id="progress_div">
+            <progress max=100 value=0 id="progress_bar"></progress>
+        </div>
+
+        <div class="buttons">
+
+            <img class="btm" onmouseover = hover_btm(this) onmouseout="out_btm(this)" onclick = retroceder() src="Assets/Icons/backward.png">
+            <img class="btm" onmouseover = hover_btm(this) onmouseout="out_btm(this)" onclick = avancar() src="Assets/Icons/foward.png">
+            <img class="btm" onmouseover = hover_btm(this) onmouseout="out_btm(this)" onclick = menos_vel() src="Assets/Icons/decrease.png">
+            <img class="btm" onmouseover = hover_btm(this) onmouseout="out_btm(this)" onclick = mais_vel() src="Assets/Icons/increase.png">
+            <img class="btm" onmouseover = hover_btm(this) onmouseout="out_btm(this)" id="play_btm" onclick = play_music() src="Assets/Icons/play.png">
+            <img class="btm" onmouseover = hover_btm(this) onmouseout="out_btm(this)" onclick = stop() src="Assets/Icons/stop.png">
+
+        </div> 
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
